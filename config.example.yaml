@@ -1,0 +1,17 @@
+# LinkedIn OAuth2 Access Token
+# Required scopes:
+#   - Personal posts: w_member_social (and openid, profile to use `whoami`)
+#   - Organization posts: w_organization_social
+access_token: "YOUR_LINKEDIN_ACCESS_TOKEN"
+
+# LinkedIn API Version in YYYYMM format (defaults to "202601" if omitted)
+api_version: "202601"
+
+# Your personal LinkedIn member ID (the ID part of urn:li:person:<ID>, or full URN)
+# Run `cargo run -- whoami` with your access_token set to discover this ID.
+person_id: "YOUR_PERSON_ID"
+
+# Friendly aliases mapped to LinkedIn Organization IDs (or full urn:li:organization:<ID>)
+organizations:
+  my-company: "12345678"
+  side-project: "87654321"
